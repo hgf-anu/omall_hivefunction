@@ -62,7 +62,7 @@ public class EventJsonUDTF extends GenericUDTF{
 					return;
 				}
 
-				for( int i = 0 ; i <ja.length()  ; i++ ){
+				for( int i = 0 ; i < ja.length() ; i++ ){
 					String[] results = new String[2];
 					//这里做一个try+catch，增加操作的容错性，不会产生错误的时候马上崩溃
 					try{
@@ -81,8 +81,6 @@ public class EventJsonUDTF extends GenericUDTF{
 				e.printStackTrace();
 			}
 		}
-
-
 	}
 
 	@Override
