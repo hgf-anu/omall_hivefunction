@@ -16,7 +16,8 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 /**
- * 主要用来解析dwd_base_event_log中的公共字段，事件作为一个JSON对象
+ * 主要用来解析dwd_base_event_log中的公共字段，事件作为一个JSON对象。
+ * 事实上我们可以不适用UDF也能完成需求，但是通过UDF我们可以把错误日志输出到不同文件中，这是系统函数没法做到的。这样可以快速定位错误信息
  */
 public class BaseFieldUDF extends UDF{
 
